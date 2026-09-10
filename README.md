@@ -1,23 +1,7 @@
 # FLOAMEN — GitHub Pages site
 
-Saf HTML, CSS ve JavaScript. Kurulum paketi, derleme, Node.js veya backend gerekmez. ZIP'i açıp `index.html` dosyasını tarayıcıda açabilirsiniz. Görsellerin çalışması için assets klasörünü yanında tutun.
-
-## GitHub'a yükleme
-
-1. GitHub'da bir repository oluşturun (örneğin `floamen`).
-2. ZIP içindeki dosyaları repository'nin köküne yükleyin. `index.html`, `CNAME` ve `assets` doğrudan kökte olmalı; ZIP dosyasının kendisini yüklemeyin.
-3. Settings → Pages → Build and deployment → Source: **Deploy from a branch**.
-4. Branch: **main**, folder: **/(root)** seçip kaydedin.
-
-Resmî rehber: [GitHub Pages Quickstart](https://docs.github.com/en/pages/quickstart).
-
 ## www.floamen.com
 
-Önce GitHub Settings → Pages → Custom domain alanına `www.floamen.com` yazıp kaydedin. Paketteki CNAME dosyası aynı değeri içerir. Ardından domain sağlayıcınızda `www` için CNAME kaydını `GITHUB_KULLANICI_ADINIZ.github.io` hedefine ayarlayın. Hedefe repository adını, https:// veya yol eklemeyin. DNS kontrolü ve sertifika hazır olduğunda GitHub'da Enforce HTTPS'i etkinleştirin.
-
-`floamen.com` kök adresinin de çalışması için sağlayıcınızda GitHub'ın aşağıdaki resmî rehberine göre apex kayıtlarını yapılandırın. Bu paket domain veya GitHub hesabınızın ayarlarını değiştirmez.
-
-[GitHub özel domain ve DNS rehberi](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 
 ## Bağlantıları değiştirme
 

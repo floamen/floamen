@@ -17,6 +17,22 @@
     <meta name="theme-color" content="#050505">
     <link rel="icon" href="assets/logo/favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* How-to-use collage: preserve its 2:1 ratio and never crop the image. */
+        #how-it-works .instruction-image {
+            display: block;
+            width: min(100%, 1200px);
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 2 / 1;
+            object-fit: contain;
+            margin: clamp(1.5rem, 4vw, 3rem) auto 0;
+        }
+        #how-it-works .section-heading {
+            margin-bottom: 0;
+        }
+    </style>
+
     <script defer src="assets/js/links.js"></script>
     <script defer src="assets/js/main.js"></script>
 </head>
@@ -72,13 +88,17 @@
                 </video>
             </div>
         </section>
-        <section id="how-it-works" class="instructions section light">
+        <section id="how-it-works" class="instructions section light" aria-labelledby="how-to-use-title">
             <div class="section-heading reveal">
-                <p class="eyebrow">REFILL. RECONNECT. GO.</p>
-                <h2>Simple by design.</h2>
-            </div><img class="instruction-image reveal" src="assets/images/how-it-works.webp" width="1254" height="1254"
+                <p class="eyebrow">HOW TO USE</p>
+                <h2 id="how-to-use-title">From setup to installation.</h2>
+            </div>
+            <img class="instruction-image reveal"
+                src="assets/images/how-to-use.webp"
+                width="2400" height="1200"
                 loading="lazy"
-                alt="Three steps: turn the diffuser upside down and drip fragrance oil into the underside openings; wait a few minutes for the lava stones to absorb it; install in the vent and enjoy.">
+                decoding="async"
+                alt="Floamen step-by-step guide showing everything included, attaching the mounting legs, adding fragrance to the lava stones, aligning the diffuser with the vent, clicking it into place, and enjoying the fragrance.">
         </section>
         <section id="installation-video" class="video-section section">
             <div class="section-heading reveal">

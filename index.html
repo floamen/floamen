@@ -19,6 +19,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/links.js"></script>
     <script defer src="assets/js/main.js"></script>
+    <style>
+        .legal .privacy-link {
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .legal .privacy-link:hover,
+        .legal .privacy-link:focus-visible {
+            text-decoration: underline;
+            text-underline-offset: 0.25em;
+        }
+    </style>
 </head>
 
 <body>
@@ -160,13 +172,7 @@
                     <p>Floamen<br>Biedenkopfer Strasse 6, Siegen, Germany<br>floamen.design@gmail.com</p>
                 </div>
             </details>
-            <details id="privacy">
-                <summary>Privacy Policy</summary>
-                <div>
-                    <p>Privacy policy placeholder — to be completed before public launch.</p>
-                    <p>Contact: Floamen, Biedenkopfer Strasse 6, Siegen, Germany, floamen.design@gmail.com</p>
-                </div>
-            </details>
+            <a class="privacy-link" href="privacy-policy.html">Privacy Policy</a>
         </div>
         <p class="disclaimer">Floamen is an independent brand and is not affiliated with, sponsored by, or endorsed by
             Mercedes-Benz Group AG. Mercedes-Benz, AMG and related marks are the property of their respective owners.

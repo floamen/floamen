@@ -39,26 +39,18 @@
     } catch { return null; }
   }
   const videoID = youtubeID(links.installationVideo);
-  if (videoID) {
-    const player = document.getElementById('video-player');
-    const preview = document.createElement('div');
-    preview.className = 'video-empty';
-    const button = document.createElement('button');
-    button.type = 'button'; button.className = 'video-play';
-    button.innerHTML = '<span class="play-outline" aria-hidden="true">▷</span><span>Load installation video</span>';
-    const note = document.createElement('p');
-    note.className = 'video-note';
-    note.textContent = 'Loads a YouTube player. Then press play to watch.';
-    preview.append(button, note); player.replaceChildren(preview);
-    button.addEventListener('click', () => {
-      const frame = document.createElement('iframe');
-      frame.src = `https://www.youtube-nocookie.com/embed/${videoID}?autoplay=0&playsinline=1`;
-      frame.title = 'Floamen refill and installation video';
-      frame.allow = 'encrypted-media; picture-in-picture; fullscreen';
-      frame.allowFullscreen = true;
-      frame.referrerPolicy = 'strict-origin-when-cross-origin';
-      player.replaceChildren(frame); frame.focus();
-    }, { once: true });
+  const player = document.getElementById('video-player');
+  if (player && videoID) {
+    const frame = document.createElement('iframe');
+    frame.src = `https://www.youtube-nocookie.com/embed/${videoID}?playsinline=1&rel=0`;
+    frame.title = 'Floamen refill and installation video';
+    frame.loading = 'eager';
+    frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    frame.allowFullscreen = true;
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+    player.replaceChildren(frame);
+  } else if (player) {
+    player.textContent = 'Installation video is currently unavailable.';
   }
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {

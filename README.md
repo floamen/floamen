@@ -29,6 +29,10 @@ Kalıcı kutu QR hedefi: **https://www.floamen.com/#installation-video**
 
 Aynı en-boy oranını kullanmak önerilir. Oran değişirse index.html içindeki ilgili width ve height değerlerini de gerçek boyutlara göre güncellemek sayfa kaymasını önler. Kullanım görseli kırpılmadan gösterilir. Logo `assets/logo/floamen-logo.svg`, favicon `assets/logo/favicon.png` dosyasındadır. Logonun kaynak çizimi değiştirilmedi; koyu zeminde CSS invert filtresi ile beyaz gösterilir.
 
+## Tasarım ve animasyonlar
+
+Görünüm `assets/css/style.css`, animasyon davranışı `assets/js/main.js` dosyasındadır; dış kütüphane yoktur. Hero altındaki kayan şeridin metinleri `index.html` ve `de/index.html` içindeki `.marquee-track` satırındadır. Üst menüdeki DE / EN bağlantısı iki dil sayfası arasında geçiş yapar. Ziyaretçinin cihazında "hareketi azalt" ayarı açıksa animasyonlar kapanır.
+
 ## Yayın öncesi tamamlanacak alanlar
 
 Footer'daki Impressum ve Privacy Policy açılabilir yer tutucu alanlardır, tamamlanmış hukuki metin değildir. `[LEGAL_NAME]`, `[LEGAL_ADDRESS]`, `[LEGAL_EMAIL]` alanlarını ve gerekli gerçek metinleri yayından önce tamamlayın. Etsy ve video bağlantılarını hazır olduklarında ekleyin. Tarayıcıda mobil/masaüstü görünümünü ve gerçek video oynatımını kontrol edin.
